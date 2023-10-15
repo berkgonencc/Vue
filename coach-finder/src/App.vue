@@ -1,20 +1,13 @@
 <template>
-  <the-header title="Resources-App"></the-header>
-  <the-resources></the-resources>
+    <the-header></the-header>
+  <router-view></router-view>
 </template>
 
 <script>
-import TheHeader from "./components/layouts/TheHeader.vue";
-import TheResources from "./components/learning-resources/TheResources";
+import TheHeader from "./components/layout/TheHeader.vue";
 export default {
   components: {
     TheHeader,
-    TheResources,
-  },
-  data() {
-    return {
-     
-    };
   },
 };
 </script>
